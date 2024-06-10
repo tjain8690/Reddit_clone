@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--To create header of these page-->
+    <header class="header">
+        <img src="./img/reddit.jpeg" alt="#" class="logo-reddit">
+        <a href="#" class="logo"><span>r</span>Reddit</a>
+        <button class="search-reddit"><i class="fas fa-search" id="search-icon"></i>Search Reddit</button>
+        <a class="open-button" onclick="openForm()">LogIn</a>
+        <div class="form-popup" id="myForm">
+            <form action="no-action" class="form-container">
+                <h1>Login</h1>
+
+                <label for="email"><b>Login-Id</b></label>
+                <input type="text" placeholder="Enter Id" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </header>
+
+    <!--To create the trending today section of these page-->
+    <section class="heading" id="heading">
+        <h1> Trending today</h1>
+    </section>
+    <section class="banner" id="banner">
+        <div class="discovery">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laboriosam?</p>
+            <a href="https://www.discovery.com/" class="right-btn">Read more...</a>
+        </div>
+        <div class="amazon">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laboriosam?</p>
+            <a href="https://www.amazon.in/" class="right-btn">Read more...</a>
+        </div>
+        <div class="travel">
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laboriosam?</p>
+            <a href="https://www.makemytrip.com/" class="right-btn">Read more...</a>
+        </div>
+        <div class="study">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laboriosam?</p>
+            <a href="https://studyabroad.shiksha.com/" class="right-btn">Read more...</a>
+        </div>
+    </section>
+
+    <!--To created the post section of these page-->
+    <section class="container" id="posts">
+        <div class="posts-container">
+            <div class="post">
+                <img src="./img/ux.jpg" alt="" class="image">
+                <h3 class="title">Launch your career in UX Design. Gain the in-demand skills needed to land an entry-level job in UX Design with the Google UX Design Professional Certificate.</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum molestias rerum numquam, quos aut est culpa quisquam excepturi sed a inventore dicta tempore consequuntur possimus magnam corporis cum doloremque quasi fugiat exercitationem
+                    aliquid cupiditate pariatur. Dolor laboriosam voluptatem ex praesentium magni error debitis maxime alias autem distinctio. Fuga, esse velit!</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, reiciendis fugiat quas nemo quia omnis repellat obcaecati quaerat voluptates fuga error dicta cupiditate pariatur soluta dolorum quis eum quibusdam quam?</p>
+                <div class="links">
+                    <a href="#" class="user">
+                        <i class="far fa-user"></i>
+                        <span>by admin</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="far fa-comment"></i>
+                        <span>(450)</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="far fa-share-square"></i>
+                        <span>(290)</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="./img/fb.jpg" alt="" class="image">
+                <h3 class="title">Facebook account takeover: Researcher scoops $40k bug bounty for chained exploit</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum molestias rerum numquam, quos aut est culpa quisquam excepturi sed a inventore dicta tempore consequuntur possimus magnam corporis cum doloremque quasi fugiat exercitationem
+                    aliquid cupiditate pariatur. Dolor laboriosam voluptatem ex praesentium magni error debitis maxime alias autem distinctio. Fuga, esse velit!</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, reiciendis fugiat quas nemo quia omnis repellat obcaecati quaerat voluptates fuga error dicta cupiditate pariatur soluta dolorum quis eum quibusdam quam?</p>
+                <div class="links">
+                    <a href="#" class="user">
+                        <i class="far fa-user"></i>
+                        <span>by admin</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="far fa-comment"></i>
+                        <span>(350)</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="far fa-share-square"></i>
+                        <span>(190)</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="./img/train.jpg" alt="" class="image">
+                <h3 class="title">Indian Railway's Mumbai-New Delhi Rajdhani Express train completes 50 years of service</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum molestias rerum numquam, quos aut est culpa quisquam excepturi sed a inventore dicta tempore consequuntur possimus magnam corporis cum doloremque quasi fugiat exercitationem
+                    aliquid cupiditate pariatur. Dolor laboriosam voluptatem ex praesentium magni error debitis maxime alias autem distinctio. Fuga, esse velit!</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, reiciendis fugiat quas nemo quia omnis repellat obcaecati quaerat voluptates fuga error dicta cupiditate pariatur soluta dolorum quis eum quibusdam quam?</p>
+                <div class="links">
+                    <a href="#" class="user">
+                        <i class="far fa-user"></i>
+                        <span>by admin</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="far fa-comment"></i>
+                        <span>(550)</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="far fa-share-square"></i>
+                        <span>(349)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--To created the today's top growing communities section in the sidebar-->
+        <div class="sidebar">
+            <div class="box">
+                <h3 class="title"> Top Growing Communities</h3>
+                <div class="category">
+                    <a href="#"><img src="./img/tech.jpg" alt="#" class="right-logo">Technology <button class="right-btn">Join</button></a>
+                    <a href="#"> <img src="./img/science.png" alt="#" class="right-logo">Science<button class="right-btn">Join</button> </a>
+                    <a href="#"><img src="./img/researcher.jpg" alt="#" class="right-logo"> Researcher<button class="right-btn">Join</button> </a>
+                    <a href="#"><img src="./img/sports.png" alt="#" class="right-logo"> Sports <button class="right-btn">Join</button></a>
+                    <a href="#"><img src="./img/marketing.png" alt="#" class="right-logo"> Marketing <button class="right-btn">Join</button> </a>
+                </div>
+            </div>
+            <!--To create the popular posts section in sidebar-->
+            <div class="box">
+                <h3 class="title">popular posts</h3>
+                <div class="p-post">
+                    <a href="#">
+                        <h3> Police Brutality</h3>
+                        <button class="right-btn">see more...</button>
+                    </a>
+                    <a href="#">
+                        <h3>The Senate</h3>
+                        <button class="right-btn">see more...</button>
+                    </a>
+                    <a href="#">
+                        <h3>Joe Biden Elected President </h3>
+                        <button class="right-btn">see more...</button>
+                    </a>
+                    <a href="#">
+                        <h3>The Earth Is Not Flat</h3>
+                        <button class="right-btn">see more...</button>
+                    </a>
+                </div>
+            </div>
+
+            <!--To create the popular communities section in sidebar-->
+            <div class="box">
+                <h3 class="title">popular communities</h3>
+                <div class="tags">
+                    <a href="#">travel</a>
+                    <a href="#">gamming</a>
+                    <a href="#">science</a>
+                    <a href="#">Goodreads</a>
+                    <a href="#">linkedin</a>
+                    <a href="#">nature</a>
+                    <a href="#">business</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
